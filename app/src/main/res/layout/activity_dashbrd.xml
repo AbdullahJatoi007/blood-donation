@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashbrd">
+    
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnavigation"
+        android:background="#881A1A"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:textSize="34sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnavigation"
+        android:background="#881A1A"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setting"
+            android:textSize="34sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/precation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnavigation"
+        android:background="#881A1A"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setting"
+            android:textSize="34sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnavigation"
+        android:background="#881A1A"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setting"
+            android:textSize="34sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+    
+    
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="#851313"
+        >
+
+    </com.etebarian.meowbottomnavigation.MeowBottomNavigation>
+
+    
+</RelativeLayout>
