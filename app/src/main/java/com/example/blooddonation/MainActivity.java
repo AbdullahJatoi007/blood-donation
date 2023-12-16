@@ -27,9 +27,25 @@ public class MainActivity extends AppCompatActivity {
         loginbtn = findViewById(R.id.btn_login);
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
+
+
+
+
             @Override
             public void onClick(View v) {
-                if (usermail.getText().toString().equals("abdullah") && usercode.getText().toString().equals("jatoi")) {
+                String username =usermail.getText().toString();
+                String user_code = usercode.getText().toString();
+
+
+                if (username.isEmpty()){
+                    usermail.requestFocus();
+                    usermail.setError("plz enter mail");
+
+                } else if (user_code.isEmpty()) {
+                    usercode.requestFocus();
+                    usercode.setError("plz enter code");
+                }
+                else if (username.equalsIgnoreCase("abdullah") && user_code.equalsIgnoreCase("jatoi")) {
                     ;
                     Toast.makeText(MainActivity.this, "login successful", Toast.LENGTH_SHORT).show();
 
@@ -39,8 +55,11 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(MainActivity.this, "login failed", Toast.LENGTH_SHORT).show();
                 }
+
             }
+
         });
+
 
 
         create_account.setOnClickListener(new View.OnClickListener() {

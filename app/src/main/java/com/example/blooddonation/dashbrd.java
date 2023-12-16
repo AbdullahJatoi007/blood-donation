@@ -2,12 +2,15 @@ package com.example.blooddonation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.airbnb.lottie.L;
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.google.firebase.Firebase;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -17,6 +20,7 @@ public class dashbrd extends AppCompatActivity {
     MeowBottomNavigation bottomNavigation;
     RelativeLayout home,user,precaution,setting;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
